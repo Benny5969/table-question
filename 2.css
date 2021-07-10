@@ -1,0 +1,57 @@
+div{
+    overflow-x:scroll;                       /*providing scroll option for whole box*/     
+}
+.topic{
+    width:100%;
+    text-align: center;
+    overflow-x: hidden;                             /*removing scroll bar for heading*/
+    position: fixed;                                /*putting heading fixed, not allowing movement while table scrolls*/
+    background-color: #e7e7e3;
+    height: 120px;
+}
+.topic h1{
+    margin-top: 45px;
+    font-family: sans-serif;
+}
+
+table{
+    width:3000px;
+    font-size: 17px;
+    font-family: 'Gotham Book';                         /*adding font from internet resources*/
+    src: url('assets/fonts/Gotham-Book.eot');           /*adding font from internet resources*/
+    border: 2px solid #e7e7e3;                        /*border has same color as eventh row*/
+    margin-top: 120px;
+}
+
+.head{
+    font-size: 18px;
+}
+
+
+tr:nth-child(even) {
+    background-color: #e7e7e3;                      /*changing bg color of eventh row*/
+}
+tr{
+    height: 40px;
+}
+
+td{                                                     /*styling the cell*/
+    width: 300px;
+    text-align: center;
+}
+
+
+
+tr:hover{                                               /*changing color on hovering*/
+    background-color:rgb(105, 105, 100);
+    color: azure;
+}
+tr:nth-child(even):hover {                              /*changing color of eventh row on hovering*/
+    background-color: #63635f;
+    color: azure;
+}
+.dur{
+    transition-property: background-color;              /*adjusting duration of animation on hovering */
+    transition-duration: 1s;
+}
+
